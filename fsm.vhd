@@ -46,20 +46,6 @@ elsif a='1' then
 	next_state <= S2;
 end if;
 
-when S2 => x <= '0';
-if a='0' then
-	next_state <= S2;
-elsif a='1' then
-	next_state <= S3;
-end if;
-
-when S3 => x <= '1';
-if a='0' then 
-	next_state <= S3;
-elsif a='1' then 
-	next_state <= S0;
-end if;
-
 when others => x <= '0';
 next_state <= S0;
 
